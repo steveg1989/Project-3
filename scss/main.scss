@@ -1,0 +1,66 @@
+// Basics
+@import './base';
+//Utils
+@import './variables';
+@import './animations';
+//Layout
+@import './header';
+@import './footer';
+//Pages
+@import './home';
+@import './menu';
+@import './contact';
+//components
+@import './buttons';
+@import './cards';
+@import './icons';
+
+html body {
+  font-family: roboto;
+}
+
+.main__title {
+  font-family: shrikhand;
+}
+.title {
+  font-size: 1.5rem;
+  font-family: roboto;
+  font-weight: 600;
+}
+h1 {
+  font-size: 1.8rem;
+}
+h3 {
+  font-size: 1.3rem;
+  font-weight: 900;
+}
+h4 {
+  font-size: 1rem;
+  font-weight: 100;
+}
+.main__title h1 {
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+.main__subtitle h2 {
+  font-size: 1.7rem;
+  font-weight: 300;
+  padding-bottom: 0.6rem;
+}
+
+.main__subtitle {
+	h2 {
+		font-size: 1.3rem;
+		font-weight: 300;
+		padding-bottom: 0.5rem;
+		&::after {
+			content: "";
+			display: block;
+			width: 15%;
+			padding-top: 0.3rem;
+			border-bottom: 0.2rem solid $color-tertiary;
+		}
+  }
+}
+
+
