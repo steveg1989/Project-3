@@ -1,0 +1,49 @@
+header {
+  text-align: center;
+  font-weight: 900;
+}
+header h2 {
+  font-size: 1.2rem;
+  font-weight: 100;
+}
+.header {
+    &__location {
+     background-color: #e5e5e5;
+     border: inset 0.1rem $color-background;
+     i {
+      padding-right: 1rem; 
+     }
+    }
+     &__explore {
+     background-color: #f2f2f2;
+     display: flex;
+     flex-direction: column;
+     gap: 0.8rem;
+     height: 21rem;
+     padding-top: 1rem;
+  }
+  &__navigation {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      justify-content: center;
+      i {
+          position: relative;
+          right: 4rem;
+      }
+    }
+  }
+.header__img {
+  img {
+    height: 15rem;
+    object-fit: cover;
+    width: 100%;
+    z-index: -1;
+  }
+}
+
+
+
+
+
+
