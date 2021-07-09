@@ -1,0 +1,106 @@
+.nav {
+  &__title {
+    text-align: center;
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+    position: relative;
+    top: 2rem;
+}
+  &__card {
+    align-items: center;
+    display: flex;
+		gap: 1rem;
+		justify-content: flex-start;
+		margin: 1.5rem auto;
+		i {
+			color: lighten($color: #000000, $amount: 50%);
+			font-size: 1.3rem;
+		}
+		p {
+			font-weight: 900;
+      font-size: 1.1rem;
+		}
+	}
+  &__list {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.icon {
+  &__number {
+    position: relative;
+    right: 0.8rem;
+  }
+  &__new {
+    position: relative;
+    left: 12rem;
+    bottom: 17rem;
+    z-index: 1;
+  }
+}
+.restaurant__section {
+  .container {
+    align-items: center;
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+  }
+}
+.restaurant__section {
+    background-color: $color-background;
+    margin-top: 3rem;
+    padding-bottom: 5rem;
+    padding-top: 1rem;
+    .title {
+        margin-left: 1.5rem;
+    }
+  }
+  .restaurant__section a {
+    text-decoration: none;
+    color: black;
+  }
+  
+
+  @media only screen and (min-width: 768px) {
+    .restaurant__section {
+      .container {
+        align-content: center;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 2rem;
+      }
+      .title {
+        text-align: center;
+      }
+    }
+    .nav {
+      &__title {
+        text-align: center;
+      }
+    }
+  }
+  @media only screen and (min-width: 1440px) {
+    .restaurant__section {
+      .container {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 1rem;
+        justify-content: center;
+      }
+    }
+    .nav {
+      &__list {
+        display: flex;
+        flex-direction: row;
+      }
+    }
+  }
+  @media only screen and (min-width: 1920px) {
+    .restaurant__section {
+      .container {
+        gap: 2rem;
+      }
+    }
+  }
