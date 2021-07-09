@@ -1,0 +1,126 @@
+.nav__card {
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-start;
+  margin: 1.5rem auto;
+  background-color: $color-background;
+  border-radius: 1.5rem;
+  box-shadow: 3px 3px 14px 0px #a7a7a7;
+  height: 4.5rem;
+  width: 20rem;
+  transform: scale(1);
+  transition: transform 500ms;
+  &:hover {
+		background-color: lighten($color: $color-primary, $amount: 35%);
+		box-shadow: -1px 7px 15px 5px rgba(0, 0, 0, 0.20);
+		transform: scale(1.2);
+	}
+	&:hover .fas {
+		color: $color-primary;
+	}
+}
+.card {
+&__restaurant {
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: -1px 4px 10px 5px rgba(0, 0, 0, 0.4);
+  height: 15rem;
+  width: 20rem;
+}
+&__restaurant img {
+  border-radius: 1rem 1rem 0rem 0rem;
+  height: 10rem;
+  -o-object-fit: cover;
+  object-fit: cover;
+  position: relative;
+  width: 20rem;
+}
+&__text {
+    line-height: 0.5rem;
+    padding: 0 1rem;
+  }
+}
+
+.overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: #99e2d0;
+  bottom: 5.45rem;
+  left: 100%;
+  right: 0;
+  border-radius: 0 1rem 1rem 0;
+  height: 4.4rem;
+  overflow: hidden;
+  transition: 0.5s;
+  width: 0;
+}
+
+.menu {
+	&__item {
+		-webkit-box-shadow: -1px 7px 15px 5px rgba(0, 0, 0, 0.05);
+		box-shadow: -1px 7px 15px 5px rgba(0, 0, 0, 0.05);
+		background-color: white;
+		border-radius: 1rem;
+		height: 3.3rem;
+		line-height: 1rem;
+		padding-bottom: 1rem;
+		padding-left: 1rem;
+		width: 19rem;
+		strong {
+			transition: 0.3s linear;
+		}
+		h3 {
+			font-size: 1rem;
+			font-weight: 950;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			transition: 0.5s linear;
+		}
+		h4 {
+			font-size: 0.91rem;
+			font-weight: 300;
+			position: relative;
+			bottom: 0.5rem;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			transition: 0.5s linear;
+		}
+		&:hover h4 {
+			margin-right: 6rem;
+			transition: 0.3s linear;
+		}
+		&:hover h3 {
+			margin-right: 6rem;
+			transition: 0.3s linear;
+		}
+		&:hover .overlay {
+			width: 4rem;
+			left: 15.3rem;
+			transition: 0.3s linear;
+		}
+		&:hover strong {
+			margin-right: 4rem;
+			transition: 0.3s linear;
+		}
+		&:hover .check {
+			transform: rotate(-360deg);
+			transition-duration: 0.5s;
+		}
+	}
+  &__price {
+    font-size: 0.9rem;
+    position: relative;
+    float: right;
+    bottom: 3.6rem;
+    right: 0.5rem;
+  }
+}
+    
+
+
+
